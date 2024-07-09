@@ -1,0 +1,26 @@
+.explore {
+    position: relative;
+    width: 100%;
+}
+
+.explore-img {
+    width: 100%;
+    display: block;
+}
+
+.explore-text {
+    font-family: 'Poppins-Medium';
+    font-size: 20px;
+    line-height: auto;
+    letter-spacing: 5%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #d6d4d4;
+}
+
+.explore-text p {
+    margin: 0;
+}

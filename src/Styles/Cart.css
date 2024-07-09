@@ -1,0 +1,23 @@
+.cart {
+    padding-top: 20%;
+    background-color: #e2e2e2;
+}
+
+.image-description {
+    display: flex;
+}
+
+.suppl-imgs {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+#navbar * {
+    color: black;
+}
+
+#navbar path {
+    stroke: black;
+}

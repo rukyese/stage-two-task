@@ -1,0 +1,43 @@
+.EndOfSalesSeason {
+    position: relative;
+    width: 100%;
+}
+
+.EndOfSalesSeason-img {
+    width: 100%;
+    display: block;
+}
+
+.EndOfSalesSeason-text {
+    font-family: 'Poppins-Medium';
+    font-size: 16px;
+    line-height: auto;
+    letter-spacing: 5%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #d6d4d4;
+    width: 100%;
+}
+
+.EndOfSalesSeason-text p {
+    margin: 0;
+}
+
+.EndOfSalesSeason-text ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.EndOfSalesSeason-text ul li {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 50px 0;
+}
+
+.EndOfSalesSeason-text ul li a {
+    text-decoration: none;
+    color: #d6d4d4;
+}
