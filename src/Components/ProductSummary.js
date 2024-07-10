@@ -6,7 +6,7 @@ function ProductSummary() {
     <div className="product-summary">
         <img src="../Images/main-img-crop.png" alt="Product" className="product-image"/>
 
-      <div className="product-details">
+      <div className="product-details checkout">
         <h4>CUSTOM DENIM JACKET</h4>
         <h3>Longer Dark Wash Denim Jacket</h3>
         <div className="reviews">10 Reviews</div>

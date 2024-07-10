@@ -1,45 +1,60 @@
 .product-page {
-    padding-top: 200px;
-    background-color: #e2e2e2;
-}
-
-.product-page {
     display: flex;
     flex-wrap: wrap;
-  }
-  
+    padding-top: 170px;
+    background-color: #e2e2e2;
+    width: 85%;
+    margin: auto;
+}
+
 .product-images {
     display: flex;
-    flex: 1 1 50%;
-    padding: 10px;
+    /* flex-wrap: wrap; */
+    width: 50%;
+    border: 2px solid red;
+    gap: 30px;
 }
-  
-.product-details {
-    flex: 1 1 50%;
-    padding: 10px;
+
+.product-image {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 2px solid #52730d;
 }
 
 .product-image img {
+    display: block;
+    margin: auto;
     width: 100%;
-    height: auto;
+    min-height: 600px;
+    max-width: 373px; 
 }
 
 .thumbnail-images {
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
-    gap: 10px;
-  }
-  
+    border: 2px solid #52730d;
+}
+
 .thumbnail-images img {
-    width: 30%;
-    height: auto;
     cursor: pointer;
+    width: 100%;
+    height: auto;
+    flex-shrink: 1;
+    max-width: 196px;
+}
+
+.product-details {
+    padding-top: 10px;
+    width: 50%;
+    border: 2px solid red;
 }
 
 .product-details h1 {
     font-size: 24px;
-  }
-  
+}
+
 .product-details .reviews {
     font-size: 14px;
 }
@@ -54,7 +69,7 @@
     margin-bottom: 20px;
 }
 
-.product-details .shipping{
+.product-details .shipping {
     margin-bottom: 30px;
 }
 
@@ -63,11 +78,13 @@
     color: black;
 }
 
-.subtotal, .shipping, .total {
+.subtotal,
+.shipping,
+.total {
     width: 300px;
 }
 
-.small { 
+.small {
     font-family: "Poppins", sans-serif;
     font-size: 10px;
     margin-right: 5px;
@@ -78,28 +95,39 @@
 }
 
 .product-details .features {
-    list-style: none;
     padding: 0;
+    padding-left: 25px;
 }
 
 .product-details .features li {
-    margin-top: 5px;
+    text-transform: uppercase;
+}
+
+.cart-select {
+    display: flex;
+    gap: 30px;
 }
 
 .size-select {
     margin-top: 20px;
     padding: 10px;
-    width: 100%;
+    width: 50%;
+    border-radius: 0;
+    height: 50px;
 }
 
 .add-to-cart {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
     margin-top: 20px;
     padding: 10px;
-    width: 100%;
+    width: 50%;
     background-color: #52730d;
     color: white;
     border: none;
     cursor: pointer;
+    height: 50px;
 }
 
 .shipping-returns {

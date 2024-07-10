@@ -14,7 +14,7 @@
   height: auto;
 }
 
-.product-details {
+.product-details.checkout {
   margin: auto;
   width: 400px;
   margin-top: 20px;
