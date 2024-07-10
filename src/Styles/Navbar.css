@@ -90,7 +90,7 @@ nav {
     text-align: left;
     display: flex;
     padding: 0;
-    padding-left: 120px;
+    padding-left: 80px;
     padding-top: 30px;
     padding-right: 60px;
     align-items: center;
@@ -103,7 +103,8 @@ nav .logo {
 }
 
 .navbar-links {
-    display: inline-block;
+    display: inline;
+    height: 100%;
     margin-left: auto;
 }
 
@@ -119,6 +120,8 @@ nav .logo {
 
 .navbar-links ul {
     padding-left: 0;
+    position: relative;
+    top: -15px;
 }
 
 nav ul li a {
@@ -132,4 +135,31 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: #d4d4d4;
+}
+
+@media screen and (max-width: 700px) {
+    #contact {
+        display: none;
+    }
+
+    nav.navbar {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .logo h1 {
+        font-size: 35px;
+        margin-bottom: 3px;
+        margin-left: 10px;
+    }
+
+    .logo p {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    div.navbar-links ul li a {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }

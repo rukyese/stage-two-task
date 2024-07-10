@@ -35,3 +35,22 @@
     width: 400px;
 }
 
+@media screen and (max-width: 1040px) {
+    #header-caption h1 {
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    #header-caption h1 {
+        font-size: 60px;
+    }
+
+    #header-caption p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 715px) {
+    
+}

@@ -7,7 +7,7 @@ footer ul {
     padding-left: 0;
 }
 
-footer li{
+footer li {
     list-style: none;
 }
 
@@ -41,8 +41,8 @@ footer .footer-links {
     stroke: white;
 }
 
-.newsletter {
-    vertical-align: middle;
+.newsletter-box {
+    display: flex;
 }
 
 .newsletter .email {
@@ -60,9 +60,11 @@ footer .footer-links {
     background-color: #595555;
     color: white;
     padding: 0 30px 0 55px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
 }
 
-.col-4, .social-media{
+.col-4 {
     padding-right: 5%;
 }
 
@@ -84,3 +86,23 @@ footer .footer-links {
     padding-right: 20px;
 }
 
+@media screen and (max-width: 705px) {
+    .social-media {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .newsletter-box {
+        flex-direction: column;
+    }
+
+    .newsletter-subscribe {
+        margin-top: 20px;
+    }
+
+    div.row.footer-links {
+        margin-top: 0px;
+    }
+}
