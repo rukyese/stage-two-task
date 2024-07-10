@@ -23,7 +23,7 @@ const Navbar = () => {
         <ul>
           <li className={getNavStyle('/')}><Link to="#">Contact</Link></li>
           <li className={getNavStyle('/')}><Link to="#"><UserIcon className="icon" id="user" /></Link></li>
-          <li className={getNavStyle('/')}><Link to="/checkout"><FavIcon alt="Favorites" className="icon" id="fav" /></Link></li>
+          <li className={getNavStyle('/')}><Link to="#"><FavIcon alt="Favorites" className="icon" id="fav" /></Link></li>
           <li className={getNavStyle('/')}><Link to="/cart"><CartIcon className="icon" id="cart" /></Link></li>
         </ul>
       </div>

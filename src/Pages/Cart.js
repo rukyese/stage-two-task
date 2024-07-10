@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Styles/Cart.css';
+import { Link } from 'react-router-dom';
 
 const Cart = () => {
   return (
@@ -33,12 +34,16 @@ const Cart = () => {
           </select>
           <button className="add-to-cart">Add to Cart</button>
         </div>
+        <Link to="/checkout"><button className="go-to-checkout">Proceed to Checkout</button></Link>
         <div className="shipping-returns">
+          <h4>Shipping & Returns</h4>
           <p>Free shipping within Lagos. International rates calculated at checkout.</p>
         </div>
+
         <div className="sku">SKU: VRML-OS-201-1</div>
         <div className="cart-newsletter">
           <input type="email" placeholder="Email" />
+          <br />
           <button>Subscribe</button>
         </div>
       </div>
