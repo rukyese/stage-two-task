@@ -1,23 +1,32 @@
 import React from 'react'
 import '../Styles/Navbar.css'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
+import { ReactComponent as UserIcon } from '../Icons/user-icon.svg'
+import { ReactComponent as FavIcon } from '../Icons/fav-icon.svg'
+import { ReactComponent as CartIcon } from '../Icons/cart-icon.svg'
 
 const Navbar = () => {
+  const location = useLocation();
+
+  const getNavStyle = (path) => {
+    return location.pathname === path ? 'nav-link active' : 'nav-link';
+  };
+
   return (
-    <nav id="navbar">
-        <a className="dropdown-icon"><i>&#8801;</i></a>
-        <div className="logo">
-            <h1>KAIROS</h1>
-            <p>Premium Apparel</p>
-        </div>
-        <div className="navbar-links">
-            <ul>
-                <li><Link to="#">Contact</Link></li>
-                <li><Link to="#"><img src="../Icons/user-icon.svg" alt="User" className="icon" id="user" /></Link></li>
-                <li><Link to="#"><img src="../Icons/fav-icon.svg" alt="Favorites" className="icon" id="fav" /></Link></li>
-                <li><Link to="/cart"><img src="../Icons/cart-icon.svg" alt="Cart" className="icon" id="cart" /></Link></li>
-            </ul>
-        </div>
+    <nav className="navbar">
+      <a className="dropdown-icon"><i className={getNavStyle('/')}>&#8801;</i></a>
+      <Link to="/" className="logo">
+        <h1 className={getNavStyle('/')}>KAIROS</h1>
+        <p className={getNavStyle('/')}>Premium Apparel</p>
+      </Link>
+      <div className="navbar-links">
+        <ul>
+          <li className={getNavStyle('/')}><Link to="#">Contact</Link></li>
+          <li className={getNavStyle('/')}><Link to="#"><UserIcon className="icon" id="user" /></Link></li>
+          <li className={getNavStyle('/')}><Link to="/checkout"><FavIcon alt="Favorites" className="icon" id="fav" /></Link></li>
+          <li className={getNavStyle('/')}><Link to="/cart"><CartIcon className="icon" id="cart" /></Link></li>
+        </ul>
+      </div>
     </nav>
   )
 }

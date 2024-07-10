@@ -1,0 +1,35 @@
+.checkout-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+  }
+
+  .product-summary {
+    padding-top: 170px;
+    width: 53%;
+  }
+
+  .checkout-form {
+    padding-top: 170px;
+    background-color: #dadada;
+    width: 47%;
+  }
+  
+  .no-btm {
+    border-bottom: none;
+  }
+
+  .round-top {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #e6e6e6;
+  }
+
+  .pay-now {
+    padding: 10px 0;
+    font-size: 16px;
+    font-family: "Poppins";
+  }
+  
+  

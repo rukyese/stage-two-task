@@ -1,20 +1,33 @@
-#navbar {
+.navbar {
     position: absolute;
     top: 0;
+    color: #3a3a3a;
+}
+
+.navbar a {
+    color: #3a3a3a;
 }
 
 .icon {
     width: 20px;
-    transform: translateY(3px);
-    color: white;
+    transform: translateY(37%);
 }
 
-#fav {
-    transform: translate(-0.5px, 4px);
+.icon path{
+    stroke: #3a3a3a;
+}
+
+#user path:nth-child(1) {
+    stroke: #3a3a3a;
+}
+
+#user path:nth-child(2) {
+    fill: #3a3a3a;
 }
 
 #cart {
-    transform: translate(2px, 3px);
+    position: relative;
+    left: 3px;
 }
 
 .dropdown-icon {
@@ -22,9 +35,33 @@
     padding: 5px 15px;
     cursor: pointer;
 }
+.nav-link {
+    color: #3a3a3a;
+}
+.nav-link.active {
+    color: white;
+}
+
+.nav-link.active a {
+    color: white;
+}
+
+.nav-link.active path {
+    stroke: white;
+}
+
+.nav-link.active #user path:nth-child(1) {
+    stroke: white;
+}
+
+.nav-link.active #user path:nth-child(2) {
+    fill: white;
+} 
 
 .logo {
     text-align: center;
+    text-decoration: none;
+    color: #fff;
 }
 
 .logo * {
@@ -37,8 +74,12 @@
     font-weight: 300;
 }
 
+.logo p {
+    margin-top: -15px;
+}
+
 .dropdown-icon:hover {
-    background-color: #4db5d1;
+    background-color: #d4d4d4;
 }
 
 nav {
@@ -56,7 +97,8 @@ nav {
     z-index: 99;
 }
 
-nav .dropdown-icon, nav .logo {
+nav .dropdown-icon,
+nav .logo {
     display: inline-block;
 }
 
@@ -71,11 +113,15 @@ nav .dropdown-icon, nav .logo {
     margin: 0;
 }
 
+.navbar-links ul li:nth-child(1) {
+    font-family: "Poppins-Medium", sans-serif;
+}
+
 .navbar-links ul {
     padding-left: 0;
 }
 
-nav ul li a {  
+nav ul li a {
     color: white;
     text-decoration: none;
     text-align: center;
@@ -85,5 +131,5 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #4db5d1;
+    background-color: #d4d4d4;
 }
