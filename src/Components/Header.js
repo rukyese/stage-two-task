@@ -1,11 +1,32 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import '../Styles/Header.css';
 
 const Header = () => {
+  const desktopImgUrl = './Images/header-img.png';
+  const mobileImgUrl = './Images/mobile-header-img.png';
+
+  const [imgUrl, setImgUrl] = useState(desktopImgUrl);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 550) {
+        setImgUrl(mobileImgUrl);
+      } else {
+        setImgUrl(desktopImgUrl);
+      }
+    };
+
+    // Set initial image URL based on window width
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, [desktopImgUrl, mobileImgUrl]);
+
   return (
     <header id="header">
       <div className="image-container">
-        <img src="./Images/header-img.png" className="header-img" />
+        <img src={imgUrl} className="header-img" />
       </div>
 
 

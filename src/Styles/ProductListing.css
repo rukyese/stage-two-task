@@ -9,7 +9,7 @@
 
 .product-box {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
     max-width: 1200px;
     margin: auto;
@@ -18,6 +18,12 @@
 
 .product-img-container img {
     display: block;
+}
+
+@media screen and (max-width: 749px) {
+    div.product {
+        width: 40%;
+    }
 }
 
 @media screen and (max-width: 500px) {
