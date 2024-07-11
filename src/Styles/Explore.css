@@ -19,8 +19,15 @@
     transform: translate(-50%, -50%);
     text-align: center;
     color: #d6d4d4;
+    width: 100%;
 }
 
 .explore-text p {
     margin: 0;
+}
+
+@media screen and (max-width: 470px) {
+    .explore-text {
+        font-size: 14px;
+    }
 }

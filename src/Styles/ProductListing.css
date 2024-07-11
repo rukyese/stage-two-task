@@ -9,9 +9,50 @@
 
 .product-box {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     max-width: 1200px;
     margin: auto;
     padding: 0;
+}
+
+.product-img-container img {
+    display: block;
+}
+
+@media screen and (max-width: 500px) {
+    div.product {
+        width: 308px;
+        margin-bottom: 30px;
+    }
+
+    div.product-box {
+        margin: auto;
+    }
+
+    section#product-listing {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    div.product-img-container {
+        width: 308px;
+        height: 315px;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    div.product-img-container img {
+        width: 308px;
+        height: 100%;
+        object-fit: cover; 
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    div.product h4, div.product p {
+        width: fit-content;
+    }
 }

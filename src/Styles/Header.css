@@ -52,5 +52,38 @@
 }
 
 @media screen and (max-width: 715px) {
-    
+    /* .image-container {
+        display: flex;
+        justify-content: center;
+        position: relative;
+      } */
+      /* 
+      header#header .header-img {
+        width: 715px;
+        overflow: hidden;
+        position: absolute;
+        top: 10px;
+      } */
 }
+
+@media screen and (max-width: 740px) {
+    #header-caption {
+        top: 60%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    #header-caption h1 {
+        font-size: 50px;
+    }
+
+    #header-caption p {
+        font-size: 13px;
+    }
+
+    #header-caption {
+        width: 300px;
+    }
+}
+
+

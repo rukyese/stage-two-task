@@ -28,16 +28,24 @@
 
 .EndOfSalesSeason-text ul {
     list-style: none;
+    display: flex;
+    justify-content: space-around;
     padding-left: 0;
 }
 
 .EndOfSalesSeason-text ul li {
     display: inline-block;
     text-decoration: none;
-    padding: 0 50px 0;
+    /* padding: 0 50px 0; */
 }
 
 .EndOfSalesSeason-text ul li a {
     text-decoration: none;
     color: #d6d4d4;
+}
+
+@media screen and (max-width: 470px) {
+    .EndOfSalesSeason-text {
+        font-size: 14px;
+    }
 }

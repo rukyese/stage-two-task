@@ -1,7 +1,6 @@
 .product {
     width: 30%;
     margin: 10px;
-    flex-grow: 1;
 }
 
 .product img {
